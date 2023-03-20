@@ -9,16 +9,19 @@ import re
 # t, T -> u, U
 
 if __name__ == '__main__':
-    # file open Ex. input.txt
-    # src/assignments/input.txt
-
+    # file open 
+    # Input file path Ex. src/assignments/input.txt
     f = open(input("파일 경로를 입력해주세요 (ex. ./input.txt ): "), 'r')
-    dna_sequence = ''.join([line.strip() for line in f.readlines()])
+    # read lines
+    lines = [line.strip() for line in f.readlines()]
+    # remove first line(comment)
+    dna_sequence = ''.join(lines[1:])
     
+    # check DNA sequence
     if re.fullmatch('(A|T|C|G|a|t|c|g)*', dna_sequence) == None:
         print("No DNA sequence.")
     else:
-        # file output ( any file name ) Ex. output.txt
+        # replace 'T' or 't' to 'U' and file output ( any file name ) Ex. output.txt
         output = open("output.txt", "w")
-        output.write(dna_sequence)
+        output.write(re.sub('T|t', 'U', dna_sequence))
         output.close()

@@ -1,2 +1,3 @@
+comment
 ATTGCTGC
-ATTTTTtttt
+ATTTTTttt
