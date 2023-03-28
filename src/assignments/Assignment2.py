@@ -1,4 +1,4 @@
-import re
+import re, sys
 
 # return the reverse complement sequence of a DNA sequence
 # A <-> T, C <-> G
@@ -29,17 +29,18 @@ def output_reverse_complement(sequence: str, file_name='output.txt') -> None:
     output.write(convert_dna_sequence(sequence[::-1]))
     output.close()
 
-
-if __name__ == '__main__':
-    # input your file path
-    # Ex. src/assignments/input.txt
-    lines = get_file_lines(input("파일 경로를 입력해주세요 (ex. ./input.txt ): "))
-    
-    # removce first line
+def main(argv):
+    '''
+    python Assignment2.py "Fill your file name or path"
+    '''
+    lines = get_file_lines(argv[1])
     sequence = ''.join(lines[1:])
 
     if is_dna_sequence(sequence):
         output_reverse_complement(sequence, input("출력 파일 경로를 입력해주세요(ex. ./output.txt ): "))
     else:
         print("No DNA sequence.")
-    
+
+
+if __name__ == '__main__':
+    main(sys.argv)

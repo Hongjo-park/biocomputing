@@ -9,7 +9,7 @@ import re
 # t, T -> u, U
 
 if __name__ == '__main__':
-    # file open 
+    # file open
     # Input file path Ex. src/assignments/input.txt
     f = open(input("파일 경로를 입력해주세요 (ex. ./input.txt ): "), 'r')
     # read lines
