@@ -23,7 +23,6 @@ def convert_dna_sequence(sequence: str) -> str:
     '''
     return sequence.translate(str.maketrans('ATCG', 'TAGC'))
 
-
 def output_reverse_complement(sequence: str, file_name='output.txt') -> None:
     output = open(file_name, "w")
     output.write(convert_dna_sequence(sequence[::-1]))
