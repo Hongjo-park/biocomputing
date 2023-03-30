@@ -44,6 +44,8 @@ import re, sys
 # if __name__ == '__main__':
 #     main(sys.argv)
 
+result = list()
+
 def postprocessing_index_results(arr: list) -> list:
     res = list()
     end = 0
