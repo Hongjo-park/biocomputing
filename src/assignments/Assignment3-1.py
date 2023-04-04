@@ -56,12 +56,11 @@ def main(argv: list) -> None:
 
     # find low-complexity regions on RE
     p = re.compile(r'(\w{2,5})\1{2,}')
-    fi = p.finditer(dna_sequence)
-
+    fi = list(p.finditer(dna_sequence))
     end = time.process_time() # set end time
     print(f"time elapsed : {(end - start)*1000}ms")
-
-    if len(list(fi)) > 0: # If the input sequence does not include any low-complexity region
+    
+    if len(fi) > 0: # If the input sequence does not include any low-complexity region
         # write index
         output_file_name = input("출력 파일 이름을 입력해주세요 : ")
         output_file = open(output_file_name, 'w')
