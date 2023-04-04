@@ -62,7 +62,8 @@ def main(argv: list) -> None:
     
     if len(fi) > 0: # If the input sequence does not include any low-complexity region
         # write index
-        output_file_name = input("출력 파일 이름을 입력해주세요 : ")
+        # output_file_name = input("출력 파일 이름을 입력해주세요 : ")
+        output_file_name = "output3-1.txt"
         output_file = open(output_file_name, 'w')
         for row in fi:
             output_file.write(str(row.start()) + '\n')
