@@ -20,12 +20,11 @@ if os.path.isfile(input_file):
         elif count == 2:
             seqB += "".join(line.strip().split(' ')).upper() # Remove spaces and replace capital letters
     file.close()
-    if seqA == "":
-        print("No protein sequence")
-        quit()
-    if count < 1:
+    if seqA == "": # the input file has nothting
+        pass
+    if count < 1: # the input file does not follow the FASTA format
         print("No correct format")
-        quit()    
+        quit()
     elif count == 1:
         print("Need one more sequence")
         quit()
@@ -79,7 +78,7 @@ def backtrack(i,j): # Backtracking LCS matrix
 
 start = datetime.datetime.now()
 LCSS(a,b)
-backtrack(a-1,b-1)
+print(backtrack(a-1,b-1))
 print(seqC)
 end = datetime.datetime.now()
 elapsed_time = end - start

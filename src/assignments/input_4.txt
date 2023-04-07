@@ -1,4 +1,4 @@
 > asdasdasd
-ATCTGATG
+ATGTTAT
 > asdasdasd
-TGCATAC
+ATCGTAC
