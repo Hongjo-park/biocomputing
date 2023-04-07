@@ -83,3 +83,4 @@ print(seqC)
 end = datetime.datetime.now()
 elapsed_time = end - start
 print(f'{elapsed_time.microseconds} microseconds')
+
