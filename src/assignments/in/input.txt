@@ -1,0 +1,6 @@
+> gi| Test case 5, DNA sequence 1
+TTTTGGGG
+GCCCCCCTT
+> gi| test case 5, DNA sequence 2
+TTTTAAAAggC
+CCACC
