@@ -63,6 +63,8 @@ def main(file1,file2):
         T = string[1][0]
         P = string[0][0]
     start = datetime.datetime.now()
+    print(P)
+    print(T)
     result = KMP(P,T)
     end = datetime.datetime.now()
     if result == []:

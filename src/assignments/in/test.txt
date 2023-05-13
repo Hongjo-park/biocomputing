@@ -1,8 +1,0 @@
-> sequence 1
-ATCGATCG
-> seqeunce 2
-ATTCGCCG
-> sequence 3
-ATCGAATT
-> sequence 4
-AACGTCGG
