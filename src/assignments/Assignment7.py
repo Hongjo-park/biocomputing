@@ -1,5 +1,4 @@
 import re, sys, time, os
-import datetime
 
 # Except : n, m is length of two Text File 
 # 더 긴 file -> Text, 짧은 file -> patterns

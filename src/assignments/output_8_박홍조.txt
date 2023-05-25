@@ -1,0 +1,3 @@
+CATC : 0
+CCCC : 3
+TTTT : 14
