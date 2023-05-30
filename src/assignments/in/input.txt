@@ -1,6 +1,10 @@
-> gi| Test case 5, DNA sequence 1
-TTTTGGGG
-GCCCCCCTT
-> gi| test case 5, DNA sequence 2
-TTTTAAAAggC
-CCACC
+>Sequence1
+cctgatagacgctatctggctatccacgtacgtaggtcctctgtgcgaatctatgcgtttccaaccat
+>Sequence2
+agtactggtgtacatttgatacgtacgtacaccggcaacctgaaacaaacgctcagaaccagaagtgc
+>Sequence3
+aaacgtacgtgcaccctctttcttcgtggctctggccaacgagggctgatgtataagacgaaaatttt
+>Sequence4
+agcctccgatgtaagtcatagctgtaactattacctgccacccctattacatcttacgtacgtataca
+>Sequence5
+ctgttatacaacgcgtcatggcggggtatgcgttttggtcgtcgtacgctcgatcgttaacgtacgtc
